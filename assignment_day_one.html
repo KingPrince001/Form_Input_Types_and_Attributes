@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Assignment Day One</title>
+  </head>
+  <body>
+    <h1>HTML Form Input Types</h1>
+    <h3>Here are the different input types you can use in HTML</h3>
+    <ul>
+      <li>&lt;input type="button"&gt;</li>
+      <li>&lt;input type="text"&gt;</li>
+      <li>&lt;input type="checkbox"&gt;</li>
+      <li>&lt;input type="date"&gt;</li>
+      <li>&lt;input type="email"&gt;</li>
+      <li>&lt;input type="file"&gt;</li>
+      <li>&lt;input type="password"&gt;</li>
+      <li>&lt;input type="tel"&gt;</li>
+      <li>&lt;input type="number"&gt;</li>
+      <li>&lt;input type="radio"&gt;</li>
+      <li>&lt;input type="reset"&gt;</li>
+      <li>&lt;input type="time"&gt;</li>
+      <li>&lt;input type="month"&gt;</li>
+      <li>&lt;input type="week"&gt;</li>
+      <li>&lt;input type="search"&gt;</li>
+      <li>&lt;input type="url"&gt;</li>
+      <li>&lt;input type="range"&gt;</li>
+      <li>&lt;input type="image"&gt;</li>
+      <li>&lt;input type="hidden"&gt;</li>
+      <li>&lt;input type="color"&gt;</li>
+      <li>&lt;input type="datetime-local"&gt;</li>
+      <li>&lt;input type="submit"&gt;</li>
+    </ul>
+    <h1>Coded Examples of Input Types with some Attributes</h1>
+    <form action="">
+      <label for="name">Input Type email</label>
+      <input type="email" placeholder="enter email"/><br/>
+      <label for="name">Input Type password</label>
+      <input type="password" placeholder="enter password" required minlength="8" /><br/>
+      <label for="name">Input Type date</label>
+      <input type="date" /><br/>
+      <label for="name">Input Type time</label>
+      <input type="time" /><br/>
+      <label for="name">Input Type month</label>
+      <input type="month" /><br/>
+      <label for="name">Input Type Text</label>
+      <input type="text" placeholder="type any word" maxlength="30"/><br/>
+      <label for="name">Input Type week</label>
+      <input type="week" /><br/>
+      <label for="name">Input Type datetime-local</label>
+      <input type="datetime-local" /><br/>
+      <label>
+        <h4>Radio Button</h4>
+        <p>Allowing to select one element ata a time</p>
+       <input type="radio" name="gender" value="male">
+          Male
+         </label>
+<label>
+  <input type="radio" name="gender" value="female">
+  Female
+</label><br/>
+<h4>Checkbox</h4>
+<p>Multiple elements can be selected at the same time</p>
+<label>
+  <input type="checkbox" name="fruit" value="apple">
+  Apple
+</label>
+<label>
+  <input type="checkbox" name="fruit" value="banana">
+  Banana
+</label><br>
+<h4>Type button</h4>
+<button type="button">Click me</button><br>
+<h4>type submit</h4>
+<button type="submit">Submit</button><br>
+<h4>type reset</h4>
+<button type="reset">Reset</button><br>
+    </form>
+
+    <h1>HTML Form Input Attributes</h1>
+    <h3>A list of all the attributes that can be used with HTML forms</h3>
+  <ol>
+    <li><p><b>Action:</b> Specifies the URL to which the form data will be submitted.</p></li>
+    <li><p><b>Method:</b> Specifies the HTTP method to be used when submitting the form, either "GET" or "POST".</p></li>
+    <li><p><b>Name:</b> Specifies a name for the form, which can be used to refer to it in scripts.</p></li>
+    <li><p><b>Enctype:</b> Specifies the encoding type to be used when submitting the form data. This is usually used for file upload</p></li>
+    <li><p><b>Autocomplete:</b> Specifies whether the browser should remember the values entered in the form field</p></li>
+    <li><p><b>Target:</b> Specifies the name of the window or frame in which to display the response received after submitting the form</p></li>
+    <li><p><b>Accept-charset:</b> Is used to specify the character encoding that the browser should use when submitting the form data to the server.</p></li>
+    <li><p><b>Novalidate:</b>  Is used to disable the default form validation that is performed by the browser when a form is submitted.</p></li>
+  </ol>
+  <h3><u>Additionally, there are attributes that can be used with individual form elements, such as:</u></h3>
+  <ol>
+    <li><p><b>Disabled:</b> This attribute is used to disable the form element so that it cannot be used or edited by the user.</p></li>
+    <li><p><b>Max:</b> This attribute is used to specify the maximum value that can be entered in a form field. It is commonly used with number or date fields</p></li>
+    <li><p><b>Placeholder:</b> This attribute is used to provide a hint or example text for the user to enter into a form field.</p></li>
+    <li><p><b>Pattern:</b> This attribute is used to specify a regular expression pattern that the input value must match in order to be considered valid.</p></li>
+    <li><p><b>Maxlength:</b> This attribute is used to specify the maximum number of characters that can be entered in a text input field.</p></li>
+    <li><p><b>Min:</b> This attribute is used to specify the minimum value that can be entered in a form field. It is commonly used with number or date fields.</p></li>
+    <li><p><b>Readonly:</b> This attribute is used to make a form field read-only, meaning that the user can view the value but cannot edit it.</p></li>
+    <li><p><b>Required:</b> This attribute is used to make a form field required, meaning that the user must enter a value before the form can be submitted.</p></li>
+    <li><p><b>Multiple:</b> This attribute is used to allow the user to select multiple values from a list or dropdown menu.</p></li>
+    <li><b>Size: </b> This attribute is used to specify the size of a form field, such as the number of visible characters in a text input field or the number of options displayed in a dropdown menu.</p></li>
+    <li><p><b>Value:</b> This attribute is used to set the default value of a form field</p></li>
+    <li><p><b>Step:</b> This attribute is used to specify the increment or decrement value for number fields</p></li>
+  
+    <li><p><b>Minlength:</b> This attribute is used to specify the minimum number of characters that must be entered in a text input field. </p></li>
+    
+  </ol>
+  <footer style="margin:20px 500px;font-family: cursive;font-size: 14px;color: greenyellow;">~John Chege~</footer>
+  </body>
+</html>
